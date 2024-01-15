@@ -1,0 +1,39 @@
+{
+  "name": "julo-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "mocha ./test --reporter spec --exit",
+    "sequelize:migration:generate": "sequelize-cli migration:generate --name",
+    "sequelize:migrate": "sequelize-cli db:migrate",
+    "sequelize:seed:create": "sequelize-cli seed:generate --name",
+    "sequelize:seed": "sequelize-cli db:seed:all"
+  },
+  "author": "viditry@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^14.5.0",
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.1-alpha.2",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.0.1",
+    "pg": "^7.8.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "supertest": "^3.4.2"
+  }
+}
